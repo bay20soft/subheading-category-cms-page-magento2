@@ -1,0 +1,7 @@
+<?php 
+	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+        $category = $objectManager->get('Magento\Framework\Registry')->registry('current_category');//get current category
+     //$category_id=$category->getId();
+     $sub_heading=$category->getSubHeading();
+?>
+<h2><?php echo $sub_heading; ?></h2>

@@ -1,0 +1,19 @@
+<?php 
+/*$objectManager =  \Magento\Framework\App\ObjectManager::getInstance(); 
+$appState = $objectManager->get('\Magento\Framework\App\State');
+$appState->setAreaCode('frontend');
+$registry = $objectManager->get('\Magento\Framework\Registry');
+$currentCategory = $registry->registry('current_category');
+echo $currentCategory->getName() . '<br />';
+echo $currentCategory->getUrl() ;*/
+
+
+  /* $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+   $category = $objectManager->get('Magento\Framework\Registry')->registry('current_category');//get current category
+    //echo $category->getId();
+    echo $block->getCurrentCategory()->getName();*/
+?>
+<h1><?php echo $block->getContentForDisplay(); ?></h1> 
+
+
+
